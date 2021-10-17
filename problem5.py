@@ -1,14 +1,16 @@
-a = 210 #2*3*5*7
+num = 21
+
 flag = True
 while flag:
-    a +=1
-    m = 0
-    for x in range(1,21):
-        m = a % x
-        if m != 0:
+    num +=1
+    remaining = 0
+    for x in range(2,21):
+        remaining = num % x
+        if remaining != 0:
             break
     else:
         flag = False 
     
 
-print (a)
+print (num)
+
