@@ -51,14 +51,12 @@ nums = '73167176531330624919225119674426574742355349194934\
 nums = list(nums)
 
 result = 0
-#ll = []
 
-for x in range(1,989) :
-    this_result = 0
-    for y in range(0,12):
-        this_result += int(nums[x+y]) + this_result
+for x in range(0,987) : 
+    this_result = 1
+    for y in range(1,14):
+        this_result += int(nums[x+y]) * this_result
     if this_result > result :
         result = this_result
 
 print(result)
-
