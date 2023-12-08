@@ -11,10 +11,19 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 
 package main
 
-func main() {
-	for numerator := 0; numerator <= 10; numerator++ {
-		if numerator%3 == 0 || numerator%5 == 0 {
+import (
+	"fmt"
+)
 
+var (
+	sum int
+)
+
+func main() {
+	for numerator := 1; numerator < 10; numerator++ {
+		if numerator%3 == 0 || numerator%5 == 0 {
+			sum += numerator
 		}
 	}
+	fmt.Println(sum)
 }
