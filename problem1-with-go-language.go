@@ -20,10 +20,11 @@ var (
 )
 
 func main() {
-	for numerator := 1; numerator < 10; numerator++ {
+	for numerator := 1; numerator < 1000; numerator++ {
 		if numerator%3 == 0 || numerator%5 == 0 {
 			sum += numerator
+			fmt.Printf("%v ", numerator)
 		}
 	}
-	fmt.Println(sum)
+	fmt.Printf("\n sum = %v \n", sum)
 }
