@@ -13,5 +13,8 @@ package main
 
 func main() {
 	for numerator := 0; numerator <= 10; numerator++ {
+		if numerator%3 == 0 || numerator%5 == 0 {
+
+		}
 	}
 }
