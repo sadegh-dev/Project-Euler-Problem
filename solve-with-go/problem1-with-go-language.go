@@ -9,7 +9,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 
 // Reference: https://projecteuler.net/problem=1
 
-package main
+package problem1
 
 import (
 	"fmt"
@@ -19,7 +19,7 @@ var (
 	sum int
 )
 
-func main() {
+func problem1() {
 	for numerator := 1; numerator < 1000; numerator++ {
 		if numerator%3 == 0 || numerator%5 == 0 {
 			sum += numerator
