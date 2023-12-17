@@ -1,3 +1,5 @@
+package problem1
+
 // Project Euler >> Problem 1
 
 // Title: Multiples of 3 and 5
@@ -8,8 +10,6 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 */
 
 // Reference: https://projecteuler.net/problem=1
-
-package problem1
 
 import (
 	"fmt"
