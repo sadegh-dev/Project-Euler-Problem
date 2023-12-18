@@ -1,4 +1,6 @@
-package problem2
+package main
+
+import "fmt"
 
 func main() {
 
@@ -9,11 +11,12 @@ func main() {
 	for true {
 		new = fibo[index] + fibo[index-1]
 
-		if new > 100 {
+		if new > 1000 {
 			break
 		} else {
 			fibo = append(fibo, new)
+			index += 1
 		}
 	}
-
+	fmt.Println(fibo)
 }
