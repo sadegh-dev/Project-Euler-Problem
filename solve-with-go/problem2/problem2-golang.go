@@ -12,7 +12,7 @@ func main() {
 	for true {
 		new = fibo[index] + fibo[index-1]
 
-		if new > 10 {
+		if new > 4000000 {
 			break
 		} else {
 			fibo = append(fibo, new)
