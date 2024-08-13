@@ -1,2 +1,2 @@
 # Project-Euler-Problem
-all problem
+all problems
